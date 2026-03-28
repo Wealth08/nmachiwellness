@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-deep-green: #377532;
+  --color-bright-green: #97BF20;
+  --color-soft-mint: #EEFFEC;
+  --color-bold-red: #B71C1C;
+
+  --font-sans: "Manrope", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-soft-mint text-black font-sans antialiased;
+  }
+}
+
+.glass {
+  @apply bg-white/40 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-deep-green to-bright-green;
+}
