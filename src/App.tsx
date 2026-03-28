@@ -510,7 +510,7 @@ export default function App() {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <div style={{ position: 'relative', width: 340, height: 340 }}>
               <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <div style={{ width: 900, height: 350, background: 'rgba(151,191,32,0.14)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid rgba(151,191,32,0.28)', backdropFilter: 'blur(8px)' }}>
+                <div style={{ width: 900, height: 350, background: 'rgba(255,255,255,0.72)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid rgba(151,191,32,0.28)', backdropFilter: 'blur(8px)' }}>
                   <img
                     src="/wtea.png"
                     alt="Wtea"
