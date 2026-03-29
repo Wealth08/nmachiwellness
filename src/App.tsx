@@ -455,7 +455,7 @@ export default function App() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 26 }} className="three-col">
             {[
-              { icon: <Zap size={28} />, num: '01', title: 'Oleophilic Mesh', desc: 'Our specialised mesh attracts and holds essential oils, preventing them from being trapped in the bag fibres.' },
+              { icon: <Zap size={28} />, num: '01', title: 'Oleophilic Mesh', desc: 'Our specialised mesh attracts essential oils and releases them fully, preventing them from being trapped in bag fibres.' },
               { icon: <Beaker size={28} />, num: '02', title: 'Full Extraction', desc: 'Unlike standard paper bags, our technology allows for a 98% extraction rate of bioactive botanical compounds.' },
               { icon: <ShieldCheck size={28} />, num: '03', title: 'Superior Quality', desc: 'Every batch is tested for purity and potency, ensuring you get the maximum wellness benefit in every cup.' },
             ].map((t, i) => (
