@@ -288,7 +288,7 @@ export default function App() {
 
         <motion.div style={{ y: heroParallax, opacity: heroOpacity, position: 'relative', zIndex: 1, textAlign: 'center', maxWidth: 880, padding: '0 24px', width: '100%' }}>
           <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }}>
-            <span className="pill"><Globe size={11} /> UK Innovation 🇬🇧</span>
+            <span className="pill"><Globe size={11} /> Wellness In Every Sip</span>
           </motion.div>
 
           <motion.h1
@@ -511,8 +511,9 @@ export default function App() {
             <div style={{ position: 'relative', width: 340, height: 340 }}>
               <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <div style={{ width: 900, height: 350, background: 'rgba(255,255,255,0.72)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid rgba(151,191,32,0.28)', backdropFilter: 'blur(8px)' }}>
-                  <img
+                  <imguh
                     src="/wtea.png"
+
                     alt="Wtea"
                     style={{ width: 600, height: 400, objectFit: 'contain' }}
                     className="animate-pulse"
