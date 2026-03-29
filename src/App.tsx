@@ -511,10 +511,8 @@ export default function App() {
             <div style={{ position: 'relative', width: 340, height: 340 }}>
               <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <div style={{ width: 900, height: 350, background: 'rgba(255,255,255,0.72)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid rgba(151,191,32,0.28)', backdropFilter: 'blur(8px)' }}>
-                  <imguh
-                    src="/wtea.png"
-
-                    alt="Wtea"
+                  <img
+                    src="/wtea.png" alt="Wtea"
                     style={{ width: 600, height: 400, objectFit: 'contain' }}
                     className="animate-pulse"
                   />
