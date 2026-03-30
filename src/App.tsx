@@ -364,11 +364,11 @@ export default function App() {
               <span style={{ color: BRAND_COLORS.brightGreen }}>Maximum Extraction</span>
             </h2>
             <p style={{ fontFamily: 'DM Sans', fontSize: 16, color: BRAND_COLORS.muted, lineHeight: 1.75, marginBottom: 32, fontWeight: 300 }}>
-              Our proprietary oleophilic mesh technology ensures that every drop of essential oil is captured,
+              Our proprietary oleophilic mesh technology ensures that every drop of essential oil is captured and released rapidly into the cup, 
               delivering a potency far superior to standard tea bags.
             </p>
             <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 13 }}>
-              {['Oleophilic mesh technology', 'Full essential oil preservation', 'Optimised surface area for infusion', 'Sustainable botanical sourcing'].map((item, i) => (
+              {['Oleophilic mesh technology', 'Full essential oil released', 'Optimised surface area for infusion', 'Sustainable botanical sourcing'].map((item, i) => (
                 <li key={i} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                   <CheckCircle2 size={17} color={BRAND_COLORS.brightGreen} style={{ flexShrink: 0 }} />
                   <span style={{ fontFamily: 'DM Sans', fontSize: 15, color: '#2e2e2e', fontWeight: 400 }}>{item}</span>
