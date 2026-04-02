@@ -635,8 +635,8 @@ export default function App() {
     >{item.icon}</a>
   ))}
 </div>
-              <a href="mailto:nmachiwellnesstea@gmail.com" style={{ fontFamily: 'DM Sans', fontSize: 13, color: BRAND_COLORS.brightGreen, textDecoration: 'none' }}>
-                nmachiwellnesstea@gmail.com
+              <a href="mailto:hello@nmachiwellness.com" style={{ fontFamily: 'DM Sans', fontSize: 13, color: BRAND_COLORS.brightGreen, textDecoration: 'none' }}>
+                hello@nmachiwellness.com
               </a>
             </div>
           </div>
