@@ -580,8 +580,6 @@ export default function App() {
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
-                <input type="hidden" name="_subject" value="New Waitlist Signup - NmaChi Wellness Tea" />
-                <input type="hidden" name="_captcha" value="false" />
 
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }} className="two-col">
                   <div>
