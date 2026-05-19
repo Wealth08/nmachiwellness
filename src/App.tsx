@@ -100,7 +100,7 @@ export default function App() {
           'Accept': 'application/json',
         },
         body: JSON.stringify({
-          access_key: '962e79ee-a551-4c0a-a18a-fec08821d756',
+          access_key: '5089a0aa-dbd7-4ead-bd2b-565e410b5f4c',
           name,
           email,
           subject: 'New Waitlist Signup - NmaChi Wellness Tea',
