@@ -6,7 +6,6 @@
 import React, { useState, useEffect, useRef, useMemo, Suspense } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'motion/react';
 import { 
-  Heart, 
   Leaf, 
   ShieldCheck, 
   Zap, 
@@ -291,7 +290,7 @@ export default function App() {
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.32 }}
             style={{ fontFamily: 'DM Sans', fontSize: 18, color: BRAND_COLORS.muted, lineHeight: 1.72, maxWidth: 520, margin: '0 auto 44px', fontWeight: 300 }}>
-            Advanced botanical extraction designed to support cardiovascular health. Experience the future of natural wellness.
+            A premium West African botanical tea, blended to a consistent, measured quality standard and sourced with authenticity. Wellness in every sip.
           </motion.p>
           <motion.div initial={{ opacity: 0, scale: 0.93 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.4 }}>
             <button className="btn-primary" onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}>
@@ -300,7 +299,7 @@ export default function App() {
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.56 }}
             style={{ display: 'flex', gap: 16, justifyContent: 'center', marginTop: 60, flexWrap: 'wrap' }}>
-            {[{ n: '98%', l: 'Extraction Rate' }, { n: '0', l: 'Synthetics' }, { n: '100%', l: 'Plant-Based' }].map((s, i) => (
+            {[{ n: '0', l: 'Synthetics' }, { n: '100%', l: 'Plant-Based' }, { n: '100%', l: 'Traceable' }].map((s, i) => (
               <div key={i} className="glass-card" style={{ padding: '14px 28px', borderRadius: 16, textAlign: 'center', minWidth: 110 }}>
                 <p style={{ fontFamily: 'Bricolage Grotesque', fontSize: 28, fontWeight: 800, color: BRAND_COLORS.midGreen, letterSpacing: '-0.05em', lineHeight: 1 }}>{s.n}</p>
                 <p style={{ fontFamily: 'DM Sans', fontSize: 11, color: BRAND_COLORS.muted, marginTop: 5, fontWeight: 400 }}>{s.l}</p>
@@ -314,7 +313,7 @@ export default function App() {
       <div style={{ background: BRAND_COLORS.deepGreen, padding: '13px 0', overflow: 'hidden', borderTop: '1px solid rgba(151,191,32,0.18)', borderBottom: '1px solid rgba(151,191,32,0.18)' }}>
         <div className="ticker">
           {[...Array(2)].map((_, rep) =>
-            ['Oleophilic Mesh Technology','98% Extraction Rate','African Botanicals','UK Engineered','Cardiovascular Support','Lab Tested','Plant-Based Formula','100% Natural'].map((item, i) => (
+            ['Authentic Sourcing','Standardised Quality','African Botanicals','UK Engineered','University Researched','100% Plant-Based'].map((item, i) => (
               <span key={`${rep}-${i}`} style={{ fontFamily: 'DM Sans', fontSize: 11, fontWeight: 600, color: 'rgba(255,255,255,0.82)', letterSpacing: '0.16em', textTransform: 'uppercase', padding: '0 36px', whiteSpace: 'nowrap' }}>
                 {item}&nbsp;&nbsp;<span style={{ color: BRAND_COLORS.brightGreen, opacity: 0.65 }}>✦</span>
               </span>
@@ -329,15 +328,15 @@ export default function App() {
         <div style={{ position: 'absolute', top: '50%', right: '-40px', transform: 'translateY(-50%)', width: 260, height: 260, borderRadius: '50%', border: '1px solid rgba(151,191,32,0.16)', pointerEvents: 'none' }} />
         <div className="container mx-auto px-6 grid md:grid-cols-2 items-center gap-12">
           <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="order-2 md:order-1 swap-2">
-            <span className="sec-label">Proprietary Technology</span>
+            <span className="sec-label">Our Approach</span>
             <h2 style={{ fontFamily: 'Bricolage Grotesque', fontSize: 'clamp(30px,4vw,54px)', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 1.07, color: BRAND_COLORS.ink, marginBottom: 20 }}>
-              Engineered for <br /><span style={{ color: BRAND_COLORS.brightGreen }}>Maximum Extraction</span>
+              Engineered for <br /><span style={{ color: BRAND_COLORS.brightGreen }}>Consistency</span>
             </h2>
             <p style={{ fontFamily: 'DM Sans', fontSize: 16, color: BRAND_COLORS.muted, lineHeight: 1.75, marginBottom: 32, fontWeight: 300 }}>
-              Our proprietary oleophilic mesh technology ensures that every drop of essential oil is captured and released rapidly into the cup, delivering a potency far superior to standard tea bags.
+              Our compostable pyramid sachet is shaped and sized to let the full blend infuse properly, based on research conducted with the University of Nottingham's Food Innovation Centre into brewing behaviour and particle size. The result is a cup that brews evenly, every time.
             </p>
             <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 13 }}>
-              {['Oleophilic mesh technology', 'Full essential oil released', 'Optimised surface area for infusion', 'Sustainable botanical sourcing'].map((item, i) => (
+              {['Compostable pyramid sachet', 'Researched brewing performance', 'Sized for even infusion', 'Sustainable botanical sourcing'].map((item, i) => (
                 <li key={i} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                   <CheckCircle2 size={17} color={BRAND_COLORS.brightGreen} style={{ flexShrink: 0 }} />
                   <span style={{ fontFamily: 'DM Sans', fontSize: 15, color: '#2e2e2e', fontWeight: 400 }}>{item}</span>
@@ -380,7 +379,7 @@ export default function App() {
             {[
               { icon: <Globe size={26} color={BRAND_COLORS.midGreen} />, title: 'UK Innovation 🇬🇧', desc: 'Designed and engineered in the United Kingdom for global quality standards.' },
               { icon: <Leaf size={26} color={BRAND_COLORS.midGreen} />, title: 'African Botanicals 🌿', desc: 'Sourcing the most potent, naturally occurring herbs from the heart of Africa.' },
-              { icon: <Heart size={26} color={BRAND_COLORS.midGreen} />, title: 'Cardio Support ❤️', desc: 'Specifically formulated to support a healthy heart and vascular system.' },
+              { icon: <ShieldCheck size={26} color={BRAND_COLORS.midGreen} />, title: 'Rooted in Heritage 🌍', desc: 'A blend grounded in generations of West African botanical tradition, brought to a modern quality standard.' },
             ].map((f, i) => (
               <motion.div key={i} className="glass-card lift-card"
                 initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
@@ -404,9 +403,9 @@ export default function App() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 26 }} className="three-col">
             {[
-              { icon: <Zap size={28} />, num: '01', title: 'Oleophilic Mesh', desc: 'Our proprietary oleophilic mesh technology ensures that every drop of essential oil is captured and rapidly released into the cup, delivering a potency far superior to standard tea bags.' },
-              { icon: <Beaker size={28} />, num: '02', title: 'Full Extraction', desc: 'Unlike standard paper bags, our technology allows for a 98% extraction rate of bioactive botanical compounds.' },
-              { icon: <ShieldCheck size={28} />, num: '03', title: 'Superior Quality', desc: 'Every batch is tested for purity and potency, ensuring you get the maximum wellness benefit in every cup.' },
+              { icon: <Zap size={28} />, num: '01', title: 'Pyramid Sachet', desc: 'Our compostable pyramid sachet is shaped and sized to let the full blend infuse properly, based on research into brewing behaviour and particle size.' },
+              { icon: <Beaker size={28} />, num: '02', title: 'Consistent Infusion', desc: 'Our pyramid sachet format is designed and tested to infuse evenly, so every cup reflects the same quality blend, not a diluted one.' },
+              { icon: <ShieldCheck size={28} />, num: '03', title: 'Standardised Quality', desc: 'We\'re building NmaChi around a declared quality standard for our blend, developed and verified with the University of Nottingham\'s Food Innovation Centre.' },
             ].map((t, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.12 }}
                 style={{ position: 'relative', background: BRAND_COLORS.paleGreen, borderRadius: 24, padding: '40px 30px', overflow: 'hidden', border: '1px solid rgba(55,117,50,0.1)' }}>
@@ -427,12 +426,12 @@ export default function App() {
           <div>
             <span className="sec-label" style={{ color: 'rgba(255,255,255,0.35)' }}>Pure Benefits</span>
             <h2 style={{ fontFamily: 'Bricolage Grotesque', fontSize: 'clamp(30px,4.5vw,58px)', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 1.04, marginBottom: 40 }}>
-              Pure Benefits. <br /><span style={{ color: BRAND_COLORS.brightGreen }}>No Compromise.</span>
+              Pure Ingredients. <br /><span style={{ color: BRAND_COLORS.brightGreen }}>No Compromise.</span>
             </h2>
             <div>
               {[
-                { icon: <Heart size={20} />, title: 'Cardiovascular Health', desc: 'Supports healthy blood flow and heart function.' },
-                { icon: <Zap size={20} />, title: 'Rich in Essential Oils', desc: 'Maximum bioavailability of natural plant oils.' },
+                { icon: <Globe size={20} />, title: 'Authentic Sourcing', desc: 'Grown and selected in Nigeria, chosen for quality at the source.' },
+                { icon: <Zap size={20} />, title: 'Standardised Quality', desc: 'Blended to a consistent, declared quality standard.' },
                 { icon: <Leaf size={20} />, title: '100% Plant-Based', desc: 'No synthetic additives, just pure African botanicals.' },
                 { icon: <CheckCircle2 size={20} />, title: 'Easy Daily Ritual', desc: 'Seamlessly fits into your morning or evening routine.' },
               ].map((b, i) => (
@@ -469,10 +468,10 @@ export default function App() {
             </div>
             <h2 style={{ fontFamily: 'Bricolage Grotesque', fontSize: 32, fontWeight: 800, color: BRAND_COLORS.ink, marginBottom: 16, letterSpacing: '-0.04em' }}>Backed by Science</h2>
             <p style={{ fontFamily: 'DM Sans', fontSize: 17, color: BRAND_COLORS.muted, lineHeight: 1.75, fontStyle: 'italic', maxWidth: 580, margin: '0 auto 40px', fontWeight: 300 }}>
-              "Our formulation principles are rooted in the 2022 Oxford Nutrition Reviews, focusing on the synergistic effects of botanical polyphenols on vascular health."
+              "We're working with the Food Innovation Centre at the University of Nottingham to characterise our blend against a declared quality standard, so consistency isn't just promised, it's measured."
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 24 }}>
-              {['Research-backed', 'Premium quality', 'Natural ingredients', 'Lab tested'].map((b, i) => (
+              {['Research-backed', 'Premium quality', 'Natural ingredients', 'University researched'].map((b, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                   <ShieldCheck size={15} color={BRAND_COLORS.brightGreen} />
                   <span style={{ fontFamily: 'DM Sans', fontSize: 12, fontWeight: 600, color: BRAND_COLORS.midGreen, textTransform: 'uppercase', letterSpacing: '0.1em' }}>{b}</span>
@@ -534,7 +533,8 @@ export default function App() {
                 </button>
 
                 <p style={{ fontFamily: 'DM Sans', textAlign: 'center', fontSize: 12, color: 'rgba(0,0,0,0.3)', fontWeight: 300 }}>
-                  By joining, you agree to receive updates from NmaChi Wellness Tea. We respect your privacy.
+                  By joining, you agree to receive updates from NmaChi Wellness Tea. We respect your privacy — read our{' '}
+                  <a href="#/privacy-policy" style={{ color: BRAND_COLORS.midGreen, textDecoration: 'underline' }}>Privacy Policy</a>.
                 </p>
               </form>
             )}
@@ -551,7 +551,7 @@ export default function App() {
                 <img src="/logo white.png" alt="NmaChi" style={{ height: 40, width: 'auto', objectFit: 'contain' }} />
               </div>
               <p style={{ fontFamily: 'DM Sans', fontSize: 13, color: 'rgba(255,255,255,0.32)', maxWidth: 240, lineHeight: 1.65, fontWeight: 300 }}>
-                NmaChi Wellness Ltd.<br />Revolutionizing cardiovascular wellness through botanical innovation.
+                NmaChi Wellness Ltd.<br />Standardised West African botanical tea, rooted in tradition and measured for quality.
               </p>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 16 }}>
@@ -576,7 +576,7 @@ export default function App() {
             <p style={{ fontFamily: 'DM Sans', fontSize: 12, color: 'rgba(255,255,255,0.2)', fontWeight: 300 }}>© 2026 NmaChi Wellness Ltd. All rights reserved.</p>
             <div style={{ display: 'flex', gap: 24 }}>
               {['Privacy Policy', 'Terms of Service'].map(l => (
-                <a key={l} href="#" style={{ fontFamily: 'DM Sans', fontSize: 12, color: 'rgba(255,255,255,0.2)', textDecoration: 'none', fontWeight: 300 }}>{l}</a>
+                <a key={l} href={l === 'Privacy Policy' ? '#/privacy-policy' : '#'} style={{ fontFamily: 'DM Sans', fontSize: 12, color: 'rgba(255,255,255,0.2)', textDecoration: 'none', fontWeight: 300 }}>{l}</a>
               ))}
             </div>
           </div>
